@@ -1,0 +1,503 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+    background: #f4f6fb;
+
+    margin: 0;
+
+    padding: 0;
+
+    color: #1f2937;
+
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar {
+
+    width: 250px;
+
+    height: 100vh;
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    background: linear-gradient(
+        180deg,
+        #071739,
+        #0b244f
+    );
+
+    padding: 25px 18px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    box-shadow: 4px 0 20px rgba(0,0,0,0.08);
+
+}
+
+/* LOGO */
+
+.logo {
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    margin-bottom: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+/* NAVIGATION LINKS */
+
+.sidebar a {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: rgba(255,255,255,0.85);
+
+    text-decoration: none;
+
+    padding: 12px 16px;
+
+    margin-bottom: 10px;
+
+    border-radius: 12px;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+
+}
+
+/* ICONS */
+
+.sidebar a i {
+
+    font-size: 16px;
+
+}
+
+/* HOVER EFFECT */
+
+.sidebar a:hover {
+
+    background: rgba(255,255,255,0.12);
+
+    color: white;
+
+    transform: translateX(5px);
+
+}
+
+/* ACTIVE LINK */
+
+.sidebar a.active {
+
+    background: #2563eb;
+
+    color: white;
+
+    box-shadow: 0 8px 20px rgba(37,99,235,0.35);
+
+}
+
+/* FOOTER */
+
+.sidebar-footer {
+
+    color: rgba(255,255,255,0.7);
+
+    text-align: center;
+
+    font-size: 13px;
+
+    padding-top: 20px;
+
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.main-content {
+
+    margin-left: 250px;
+
+    padding: 30px;
+
+}
+
+/* =========================
+   TOPBAR
+========================= */
+
+.topbar {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 35px;
+
+}
+
+.topbar h1 {
+
+    font-size: 42px;
+
+    font-weight: 700;
+
+    margin-bottom: 6px;
+
+}
+
+.topbar p {
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+}
+
+/* PROFILE SECTION */
+
+.profile-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 16px;
+
+}
+
+/* NOTIFICATION BUTTON */
+
+.notification-btn {
+
+    width: 50px;
+
+    height: 50px;
+
+    border-radius: 50%;
+
+    border: none;
+
+    background: white;
+
+    font-size: 18px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+
+    cursor: pointer;
+
+}
+
+/* PROFILE CIRCLE */
+
+.profile-circle {
+
+    width: 52px;
+
+    height: 52px;
+
+    border-radius: 50%;
+
+    background: #2563eb;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-weight: 600;
+
+    font-size: 18px;
+
+}
+
+/* =========================
+   WELCOME SECTION
+========================= */
+
+.welcome-box h1 {
+
+    font-size: 34px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+.welcome-box p {
+
+    color: #6b7280;
+
+    font-size: 16px;
+
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-card {
+
+    background: white;
+
+    padding: 24px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+    transition: 0.3s;
+
+}
+
+.dashboard-card:hover {
+
+    transform: translateY(-4px);
+
+}
+
+.dashboard-card h6 {
+
+    color: #6b7280;
+
+    font-size: 15px;
+
+    margin-bottom: 10px;
+
+}
+
+.dashboard-card h2 {
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+}
+
+.card-icon {
+
+    font-size: 36px;
+
+    color: #2563eb;
+
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+}
+
+/* TABLE HEADER */
+
+.table-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+}
+
+.table-header h3 {
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+
+/* TABLE ACTIONS */
+
+.table-actions {
+
+    display: flex;
+
+    gap: 12px;
+
+}
+
+/* SEARCH BOX */
+
+.search-box {
+
+    width: 240px;
+
+    border-radius: 10px;
+
+    padding: 10px 14px;
+
+}
+
+/* BUTTON */
+
+.add-btn {
+
+    border-radius: 10px;
+
+    padding: 10px 18px;
+
+    font-weight: 500;
+
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+}
+
+table thead {
+
+    background: #111827;
+
+    color: white;
+
+}
+
+table th {
+
+    padding: 16px;
+
+    font-size: 15px;
+
+}
+
+table td {
+
+    padding: 16px;
+
+    font-size: 14px;
+
+}
+
+table tbody tr:hover {
+
+    background: #f9fafb;
+
+}
+
+/* =========================
+   FORM CARD
+========================= */
+
+.form-card {
+
+    background: white;
+
+    border-radius: 22px;
+
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+
+}
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert {
+
+    border-radius: 12px;
+
+    padding: 14px 18px;
+
+    font-size: 14px;
+
+    margin-bottom: 20px;
+
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width: 992px) {
+
+    .sidebar {
+
+        width: 90px;
+
+        padding: 20px 10px;
+
+    }
+
+    .sidebar a span,
+    .logo span,
+    .sidebar-footer {
+
+        display: none;
+
+    }
+
+    .main-content {
+
+        margin-left: 90px;
+
+    }
+
+}

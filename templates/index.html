@@ -1,0 +1,176 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Welcome Section -->
+
+<div class="welcome-box mb-4">
+
+    <h1>Institutional Overview</h1>
+
+    <p>
+        Central hub for campus data management and metrics.
+    </p>
+
+</div>
+
+<!-- Dashboard Cards -->
+
+<div class="row g-4 mb-4">
+
+    <div class="col-md-3">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Total Students</h6>
+
+                <h2>{{ total_students }}</h2>
+
+            </div>
+
+            <i class="bi bi-people-fill card-icon"></i>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Total Courses</h6>
+
+                <h2>{{ total_courses }}</h2>
+
+            </div>
+
+            <i class="bi bi-book-fill card-icon"></i>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Total Instructors</h6>
+
+                <h2>{{ total_instructors }}</h2>
+
+            </div>
+
+            <i class="bi bi-person-badge-fill card-icon"></i>
+
+        </div>
+
+    </div>
+
+    <div class="col-md-3">
+
+        <div class="dashboard-card">
+
+            <div>
+
+                <h6>Departments</h6>
+
+                <h2>{{ total_departments }}</h2>
+
+            </div>
+
+            <i class="bi bi-building card-icon"></i>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- Student Table -->
+
+<div class="table-card">
+
+    <div class="table-header">
+
+        <h3>Student Details</h3>
+
+        <div class="table-actions">
+
+            <input type="text"
+                   class="form-control search-box"
+                   placeholder="Search Student">
+
+            <a href="/students"
+               class="btn btn-primary add-btn">
+
+                <i class="bi bi-box-arrow-up-right"></i>
+
+                Manage Students
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="table-responsive">
+
+        <table class="table table-hover align-middle">
+
+            <thead>
+
+                <tr>
+
+                    <th>ID</th>
+
+                    <th>Name</th>
+
+                    <th>Year</th>
+
+                    <th>Age</th>
+
+                    <th>Address</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                {% for student in students %}
+
+                <tr>
+
+                    <td>{{ student[0] }}</td>
+
+                    <td>{{ student[1] }}</td>
+
+                    <td>{{ student[2] }}</td>
+
+                    <td>{{ student[3] }}</td>
+
+                    <td>{{ student[4] }}</td>
+
+                </tr>
+
+                {% endfor %}
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</div>
+
+
+
+{% endblock %}
