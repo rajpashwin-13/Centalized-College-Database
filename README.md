@@ -202,28 +202,28 @@ http://127.0.0.1:5000
 # 📷 Screenshots
 
 ## Dashboard
-(Add screenshot here)
+
 
 ## Student Management
-(Add screenshot here)
+
 
 ## Instructor Management
-(Add screenshot here)
+
 
 ## Course Management
-(Add screenshot here)
+
 
 ## Enrollment Management
-(Add screenshot here)
+
 
 ---
 
 # 👨‍💻 Developed By
 
-**1.Ashwin Raj P**
-**2.Adithya N Poojari** 
-**3.Ashin K** 
-**4.Arjun Bhaskar**   
+- Ashwin Raj P
+- Adithya N Poojari
+- Ashin K
+- Arjun Bhaskar
 A J Institute of Engineering and Technology  
 Department of CSE (AI & ML)
 
