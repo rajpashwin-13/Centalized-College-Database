@@ -203,18 +203,24 @@ http://127.0.0.1:5000
 
 ## Dashboard
 
+![alt text](<Screenshot 2026-05-20 220543-1.png>)
 
 ## Student Management
 
+![alt text](<Screenshot 2026-05-20 220601.png>)
+![alt text](<Screenshot 2026-05-20 220635.png>)
 
 ## Instructor Management
 
+![alt text](<Screenshot 2026-05-20 220748.png>)
 
 ## Course Management
 
+![alt text](<Screenshot 2026-05-20 220657.png>)
 
 ## Enrollment Management
 
+![alt text](<Screenshot 2026-05-20 220804.png>)
 
 ---
 
